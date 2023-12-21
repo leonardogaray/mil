@@ -1,0 +1,7 @@
+{
+  "name": "mil",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

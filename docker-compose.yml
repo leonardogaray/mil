@@ -4,6 +4,5 @@ services:
     build: .
     ports:
       - 4200:4200
-    working_dir: /app
     volumes:
       - ./:/app
