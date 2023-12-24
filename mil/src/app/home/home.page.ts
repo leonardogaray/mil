@@ -1,4 +1,6 @@
 import { Component, AfterViewInit } from '@angular/core';
+import MODIS from '../../scripts/MODIS';
+import VIIRS from '../../scripts/VIIRS';
 import * as L from 'leaflet';
 
 @Component({
@@ -40,7 +42,7 @@ export class HomePage implements AfterViewInit{
 
     this.map = L.map('map', {
       center: [ this.lat, this.lng ],
-      zoom: 8
+      zoom: 11
     });
 
     const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -59,10 +61,35 @@ export class HomePage implements AfterViewInit{
       this.map.invalidateSize();
     }, 500 );
 
-    /*
-    this.loadDataVIIRS();
-    this.loadDataMODIS();
-    */
+    
+    //this.loadDataVIIRS();
+    this.loadDataFromMODIS();
+  }
+
+  private loadDataFromMODIS(): void {
+    MODIS.loadData().then( (coordinates) => {
+      this.generateFires(coordinates);
+    });
+
+    VIIRS.loadData().then( (coordinates) => {
+      this.generateFires(coordinates);
+    });
+  }
+
+  private generateFires(coordinates: any[]): void {
+    let self = this;
+    coordinates.forEach(function(coordinate: any){
+      L.circle([coordinate.latitude, coordinate.longitude], {
+        color: 'red',
+        fillColor: 'red',
+        fillOpacity: 0.5,
+        radius: 100
+      })
+        .addTo(self.map)
+        .bindPopup(
+          `<b>Lat:</b> ${coordinate.latitude}<br/>` +
+          `<b>Lng:</b> ${coordinate.longitude}<br/>`);
+    });
   }
 
 }
