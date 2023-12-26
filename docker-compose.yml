@@ -1,8 +1,35 @@
 version: '3.7'
 services:
   app:
-    build: .
+    build: docker/frontend
     ports:
       - 4200:4200
     volumes:
-      - ./:/app
+      - ./frontend:/app
+  # Mysql database container
+  db:
+    image: mysql
+    container_name: mil_mysql
+    restart: always
+    volumes:
+      - db-data:/var/lib/mysql
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+    networks:
+      - mil_network
+  www:
+    build: docker/php
+    container_name: mil_symfony
+    ports:
+      - "80:80"
+    volumes:
+      - ./docker/php/vhosts:/etc/apache2/sites-enabled
+      - ./backend:/var/www/backend
+    restart: always
+    networks:
+      - mil_network
+networks:
+  mil_network:
+
+volumes:
+  db-data:
