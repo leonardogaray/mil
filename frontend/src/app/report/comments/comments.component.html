@@ -1,0 +1,14 @@
+<div>
+  <div class="margin-bottom-15">
+    <label for="inputString">Comments:</label>
+    <input type="text" id="inputString" [(ngModel)]="inputString" required #name="ngModel" class="margin-left2"/>
+  </div>
+  <div>
+    <button (click)="nextScreen()" class="btn btn-primary mt-2" [disabled]="name.invalid">
+      Send Comments
+    </button>
+  </div>
+  <button (click)="nextScreen()" class="btn btn-primary mt-2">
+    No Comments
+  </button>
+</div>

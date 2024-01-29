@@ -7,11 +7,9 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <app-report-reportfire *ngIf="currentScreen === 0" (onNextScreen)="nextScreenReportFire($event)"></app-report-reportfire>
+  <app-report-camera *ngIf="currentScreen === 1" (onNextScreen)="nextScreenCamera($event)"></app-report-camera>
+  <app-report-fire *ngIf="currentScreen === 2" (onNextScreen)="nextScreenFire($event)"></app-report-fire>
+  <app-report-smoke *ngIf="currentScreen === 3" (onNextScreen)="nextScreenSmoke($event)"></app-report-smoke>
+  <app-report-comments *ngIf="currentScreen === 4" (onNextScreen)="nextScreenComments($event)"></app-report-comments>
 </ion-content>
