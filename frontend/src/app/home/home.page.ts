@@ -18,7 +18,7 @@ export class HomePage implements AfterViewInit{
   constructor() {}
 
   ngAfterViewInit(): void {
-    let container: any = L.DomUtil.get('map');
+    let container: any = L.DomUtil.get('map-home');
     if (container && container['_leaflet_id'] != null) {
       container.remove();
     }
@@ -40,7 +40,7 @@ export class HomePage implements AfterViewInit{
 
     this.marker = L.marker([this.lat, this.lng], {icon: defaultIcon});
 
-    this.map = L.map('map', {
+    this.map = L.map('map-home', {
       center: [ this.lat, this.lng ],
       zoom: 11
     });
