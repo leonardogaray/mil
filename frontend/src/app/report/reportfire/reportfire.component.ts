@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter, AfterViewInit } from '@angular/core';
+import { Component, OnDestroy, Output, EventEmitter, AfterViewInit } from '@angular/core';
 import * as L from 'leaflet';
 
 @Component({
@@ -6,7 +6,7 @@ import * as L from 'leaflet';
   templateUrl: './reportfire.component.html',
   styleUrls: ['./reportfire.component.scss'],
 })
-export class ReportfireComponent  implements OnInit {
+export class ReportfireComponent  implements AfterViewInit {
   @Output() onNextScreen = new EventEmitter<string>();
 
   private map: any;
@@ -16,9 +16,8 @@ export class ReportfireComponent  implements OnInit {
 
   constructor() { }
 
-
   ngAfterViewInit(): void {
-    let container: any = L.DomUtil.get('map');
+    let container: any = L.DomUtil.get('map-reportfire');
     if (container && container['_leaflet_id'] != null) {
       container.remove();
     }
@@ -40,7 +39,7 @@ export class ReportfireComponent  implements OnInit {
 
     this.marker = L.marker([this.lat, this.lng], {icon: defaultIcon});
 
-    this.map = L.map('map', {
+    this.map = L.map('map-reportfire', {
       center: [ this.lat, this.lng ],
       zoom: 11
     });
@@ -67,9 +66,10 @@ export class ReportfireComponent  implements OnInit {
 
   }
 
-  ngOnInit() {}
-
   nextScreen() {
+    console.log ("afeesdfd");
     this.onNextScreen.emit();
   }
+
+
 }
