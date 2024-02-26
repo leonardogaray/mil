@@ -1,0 +1,73 @@
+
+
+  .head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(17, 52, 82);
+    align-items: center;
+    justify-content: center;
+    background-color: #F3EDC8;
+    color: black;
+    font-family: "Fira Sans", sans-serif;
+  }
+
+  .container2{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 3%;
+    padding: 20px;
+    text-align: center;
+    background-color: #942b2b;
+    color: whitesmoke;
+  }
+
+  h1{
+    margin-bottom: 60px;
+    font-size: 50px;
+    font-weight: 600;
+    color: black;
+    margin-top: 40px;
+  }
+
+  .card p{
+    font-weight: 400;
+  }
+
+  img{
+    height: 100px;
+    width: 100px;
+  }
+
+  .card h3{
+
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 30px;
+  }
+
+  .card button{
+    margin-top: auto; 
+    height: 40px;
+  }
+
+  a{
+    background-color: rgb(92, 144, 92);;
+  }
