@@ -1,46 +1,3 @@
-.y {
-    font-size:100px;
-    background-color: rgb(238, 223, 11);
-    color: rgb(255, 255, 255);
-    border-radius: 25px;
-}
-.o {
-    font-size:100px;
-    background-color: rgb(238, 132, 11);
-    color: rgb(255, 255, 255);
-    border-radius: 25px;
-}
-.r {
-    font-size:100px;
-    background-color: rgb(238, 56, 11);
-    color: rgb(255, 255, 255);
-    border-radius: 25px;
-}
-.n {
-    font-size:100px;
-    background-color: rgb(146, 91, 77);
-    color: rgb(0, 0, 0);
-    border-radius: 25px;
-}
-.w {
-    font-size:100px;
-    background-color: rgb(245, 242, 242);
-    color: rgb(0, 0, 0);
-    border-radius: 25px;
-}
-.g {
-    font-size:100px;
-    background-color: rgb(11, 238, 11);
-    color: rgb(255, 255, 255);
-    border-radius: 25px;
-}
-.b {
-    font-size:100px;
-    background-color: rgb(11, 26, 238);
-    color: rgb(255, 255, 255);
-    border-radius: 25px;
-}
-
 ion-col {
     text-align: center;
     align-items: center;
@@ -54,4 +11,9 @@ ion-col {
     width: 100%;
     align-items: center;
     justify-items: center;
+}
+
+.camera {
+    text-align:center;
+    background-color: black;
 }

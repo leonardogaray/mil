@@ -12,6 +12,8 @@ import { SmokeComponent } from './smoke/smoke.component';
 import { ReportfireComponent } from './reportfire/reportfire.component';
 import { CommentsComponent } from './comments/comments.component';
 
+import { WebcamModule } from 'ngx-webcam';
+
 
 @NgModule({
   imports: [
@@ -19,7 +21,8 @@ import { CommentsComponent } from './comments/comments.component';
     CommonModule,
     FormsModule,
     ExploreContainerComponentModule,
-    ReportPageRoutingModule
+    ReportPageRoutingModule,
+    WebcamModule
   ],
   declarations: [ReportPage, CameraComponent, ReportfireComponent, FireComponent, SmokeComponent, CommentsComponent]
 })

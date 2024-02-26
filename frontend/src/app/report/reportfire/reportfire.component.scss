@@ -75,8 +75,13 @@ ion-col {
 
 #refreshButton {
     position: absolute;
-    top: 60px;
+    top: 20px;
     right: 20px;
     padding: 10px;
     z-index: 1001;
+    font-size: 35px;
+    border-radius: 15px;
+    background-color: rgb(87, 17, 41);
+    color: rgb(255, 255, 255);
+    text-align: center;
   }

@@ -1,4 +1,4 @@
-import { Component, OnDestroy, Output, EventEmitter, AfterViewInit } from '@angular/core';
+import { Component, Output, EventEmitter, AfterViewInit } from '@angular/core';
 import * as L from 'leaflet';
 
 @Component({
@@ -67,8 +67,7 @@ export class ReportfireComponent  implements AfterViewInit {
   }
 
   nextScreen() {
-    console.log ("afeesdfd");
-    this.onNextScreen.emit();
+    this.onNextScreen.emit(this.marker.getLatLng());
   }
 
 

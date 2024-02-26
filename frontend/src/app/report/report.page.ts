@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['report.page.scss']
 })
 export class ReportPage {  
+  location: string = "none";
   comments: string= "none";
   camera: string = "none";
   smokeColor: string = "none";
@@ -25,8 +26,8 @@ export class ReportPage {
     this.init();
   }
 
-  nextScreenReportFire(camera:string) {
-    this.camera = camera;
+  nextScreenReportFire(location: string) {
+    this.location = location;
     this.currentScreen++;
   }
   nextScreenCamera(camera:string) {
@@ -43,6 +44,7 @@ export class ReportPage {
   }
   nextScreenComments(comments:string) {
     this.comments = comments;
+    console.log(this.fireColor, this.smokeColor, this.comments, this.location);
     this.router.navigate(['/tabs/home'])
   }
 }
