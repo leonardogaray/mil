@@ -10,12 +10,15 @@ import { Observable, Subject } from 'rxjs';
 export class CameraComponent  implements OnInit {
   @Output() onNextScreen = new EventEmitter<string>();
   @Output() getPicture = new EventEmitter<WebcamImage>();
+  public allowCameraSwitch = false;
+  public multipleWebcamsAvailable = false;
   showWebcam = true;
   isCameraExist = true;
   errors: WebcamInitError[] = [];
   // webcam snapshot trigger
   private trigger: Subject<void> = new Subject<void>();
   private nextWebcam: Subject<boolean | string> = new Subject<boolean | string>();
+  public webcamImage: any = null;
 
   constructor() { }
 
@@ -27,7 +30,8 @@ export class CameraComponent  implements OnInit {
   }
 
   nextScreen(value: string) {
-    this.onNextScreen.emit(value);
+    //this.onNextScreen.emit(value)
+    this.trigger.next();
   }
 
   takeSnapshot(): void {
@@ -52,6 +56,7 @@ export class CameraComponent  implements OnInit {
 
   handleImage(webcamImage: WebcamImage) {
     this.getPicture.emit(webcamImage);
+    this.webcamImage = webcamImage;
     this.showWebcam = false;
   }
 
