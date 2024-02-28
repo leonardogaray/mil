@@ -3,10 +3,10 @@
 # the template can be rendered without executing any logic in your own controller.
 # See https://symfony.com/doc/current/templates.html#rendering-a-template-directly-from-a-route
 homepage:
-    path: /{_locale}
+    path: /build/app
     controller: Symfony\Bundle\FrameworkBundle\Controller\TemplateController::templateAction
     requirements:
         _locale: '%app_locales%'
     defaults:
-        template: default/homepage.html.twig
+        template: default/app.html.twig
         _locale: '%locale%'
