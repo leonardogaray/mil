@@ -58,7 +58,7 @@
 
             <trans-unit id="title.homepage">
                 <source>title.homepage</source>
-                <target><![CDATA[Bienvenido/a a la aplicación <strong>Symfony Demo</strong>]]></target>
+                <target><![CDATA[Bienvenido/a a la aplicación <strong>M.I.L.</strong>]]></target>
             </trans-unit>
             <trans-unit id="title.source_code">
                 <source>title.source_code</source>
@@ -78,11 +78,11 @@
             </trans-unit>
             <trans-unit id="title.post_list">
                 <source>title.post_list</source>
-                <target>Listado de artículos</target>
+                <target>Listado de posts</target>
             </trans-unit>
             <trans-unit id="title.edit_post">
                 <source>title.edit_post</source>
-                <target>Editar artículo #{id, number}</target>
+                <target>Editar post #{id, number}</target>
             </trans-unit>
             <trans-unit id="title.add_comment">
                 <source>title.add_comment</source>
@@ -107,7 +107,7 @@
             </trans-unit>
             <trans-unit id="action.edit_post">
                 <source>action.edit_post</source>
-                <target>Editar artículo</target>
+                <target>Editar post</target>
             </trans-unit>
             <trans-unit id="action.save">
                 <source>action.save</source>
@@ -115,11 +115,11 @@
             </trans-unit>
             <trans-unit id="action.delete_post">
                 <source>action.delete_post</source>
-                <target>Borrar artículo</target>
+                <target>Borrar post</target>
             </trans-unit>
             <trans-unit id="delete_post_modal.title">
                 <source>delete_post_modal.title</source>
-                <target>¿Está seguro que quiere eliminar este artículo?</target>
+                <target>¿Está seguro que quiere eliminar este post?</target>
             </trans-unit>
             <trans-unit id="delete_post_modal.body">
                 <source>delete_post_modal.body</source>
@@ -127,7 +127,7 @@
             </trans-unit>
             <trans-unit id="label.delete_post">
                 <source>label.delete_post</source>
-                <target>Borrar artículo</target>
+                <target>Borrar post</target>
             </trans-unit>
             <trans-unit id="label.cancel">
                 <source>label.cancel</source>
@@ -135,19 +135,19 @@
             </trans-unit>
             <trans-unit id="action.create_post">
                 <source>action.create_post</source>
-                <target>Crear un nuevo artículo</target>
+                <target>Crear un nuevo post</target>
             </trans-unit>
             <trans-unit id="label.create_post">
                 <source>label.create_post</source>
-                <target>Crear artículo</target>
+                <target>Crear post</target>
             </trans-unit>
             <trans-unit id="label.save_and_create_new">
                 <source>label.save_and_create_new</source>
-                <target>Guardar artículo y crear otro</target>
+                <target>Guardar post y crear otro</target>
             </trans-unit>
             <trans-unit id="action.back_to_list">
                 <source>action.back_to_list</source>
-                <target>Volver al listado de artículos</target>
+                <target>Volver al listado de posts</target>
             </trans-unit>
             <trans-unit id="action.publish_comment">
                 <source>action.publish_comment</source>
@@ -216,7 +216,7 @@
             </trans-unit>
             <trans-unit id="title.post_new">
                 <source>title.post_new</source>
-                <target>Nuevo artículo</target>
+                <target>Nuevo post</target>
             </trans-unit>
             <trans-unit id="action.edit_contents">
                 <source>action.edit_contents</source>
@@ -233,7 +233,7 @@
             </trans-unit>
             <trans-unit id="menu.post_list">
                 <source>menu.post_list</source>
-                <target>Listado de artículos</target>
+                <target>Listado de posts</target>
             </trans-unit>
             <trans-unit id="menu.back_to_blog">
                 <source>menu.back_to_blog</source>
@@ -266,11 +266,11 @@
             </trans-unit>
             <trans-unit id="post.no_comments">
                 <source>post.no_comments</source>
-                <target>Se el primero en añadir un comentario en este artículo.</target>
+                <target>Se el primero en añadir un comentario en este post.</target>
             </trans-unit>
             <trans-unit id="post.no_posts_found">
                 <source>post.no_posts_found</source>
-                <target>No se ha encontrado ningún artículo.</target>
+                <target>No se ha encontrado ningún post.</target>
             </trans-unit>
 
             <trans-unit id="help.app_description">
@@ -315,7 +315,7 @@
             </trans-unit>
             <trans-unit id="action.show_post">
                 <source>action.show_post</source>
-                <target>Mostrar artículo</target>
+                <target>Mostrar post</target>
             </trans-unit>
             <trans-unit id="menu.rss">
                 <source>menu.rss</source>
@@ -327,15 +327,15 @@
             </trans-unit>
             <trans-unit id="post.created_successfully">
                 <source>post.created_successfully</source>
-                <target>¡Artículo creado con éxito!</target>
+                <target>¡Post creado con éxito!</target>
             </trans-unit>
             <trans-unit id="post.updated_successfully">
                 <source>post.updated_successfully</source>
-                <target>¡Artículo actualizado con éxito!</target>
+                <target>¡Post actualizado con éxito!</target>
             </trans-unit>
             <trans-unit id="post.deleted_successfully">
                 <source>post.deleted_successfully</source>
-                <target>¡Artículo eliminado con éxito!</target>
+                <target>¡Post eliminado con éxito!</target>
             </trans-unit>
             <trans-unit id="post.search_for">
                 <source>post.search_for</source>
@@ -347,19 +347,19 @@
             </trans-unit>
             <trans-unit id="notification.comment_created">
                 <source>notification.comment_created</source>
-                <target>¡Su artículo recibió un comentario!</target>
+                <target>¡Su post recibió un comentario!</target>
             </trans-unit>
             <trans-unit id="notification.comment_created.description">
                 <source>notification.comment_created.description</source>
-                <target><![CDATA[Su artículo "{title}" recibió un comentario nuevo. Puede leer el comentario siguiendo <a href="{link}">este enlace</a>]]></target>
+                <target><![CDATA[Su post "{title}" recibió un comentario nuevo. Puede leer el comentario siguiendo <a href="{link}">este enlace</a>]]></target>
             </trans-unit>
             <trans-unit id="rss.title">
                 <source>rss.title</source>
-                <target>Blog de Symfony Demo</target>
+                <target>Blog de M.I.L.</target>
             </trans-unit>
             <trans-unit id="rss.description">
                 <source>rss.description</source>
-                <target>Publicaciones más recientes publicadas en el blog de Symfony Demo</target>
+                <target>Publicaciones más recientes publicadas en el blog de M.I.L.</target>
             </trans-unit>
 
             <trans-unit id="paginator.previous">

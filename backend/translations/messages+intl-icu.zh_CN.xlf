@@ -414,7 +414,7 @@
 
             <trans-unit id="rss.title">
                 <source>rss.title</source>
-                <target>Symfony Demo blog</target>
+                <target>M.I.L. blog</target>
             </trans-unit>
             <trans-unit id="rss.description">
                 <source>rss.description</source>

@@ -4,19 +4,19 @@
         <body>
             <trans-unit id="post.slug_unique">
                 <source>post.slug_unique</source>
-                <target>Este título ya se usó en otro artículo y ambos deben ser únicos.</target>
+                <target>Este título ya se usó en otro post y ambos deben ser únicos.</target>
             </trans-unit>
             <trans-unit id="post.blank_summary">
                 <source>post.blank_summary</source>
-                <target>No es posible dejar el resumen del artículo vacío.</target>
+                <target>No es posible dejar el resumen del post vacío.</target>
             </trans-unit>
             <trans-unit id="post.blank_content">
                 <source>post.blank_content</source>
-                <target>No es posible dejar el contenido del artículo vacío.</target>
+                <target>No es posible dejar el contenido del post vacío.</target>
             </trans-unit>
             <trans-unit id="post.too_short_content">
                 <source>post.too_short_content</source>
-                <target>El contenido del artículo es demasiado corto ({ limit } caracteres como mínimo)</target>
+                <target>El contenido del post es demasiado corto ({ limit } caracteres como mínimo)</target>
             </trans-unit>
             <trans-unit id="post.too_many_tags">
                 <source>post.too_many_tags</source>
