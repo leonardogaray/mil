@@ -4,8 +4,8 @@ EasyAdmin Demo Application
 This project is the official [EasyAdmin][1] Demo application that showcases the
 main features of EasyAdmin, a popular admin generator for [Symfony][2] applications.
 
-It's a fork of the [Symfony Demo application][3]. This allows to compare the
-manual backend/admin included in Symfony Demo and the backend/admin created with
+It's a fork of the [M.I.L. application][3]. This allows to compare the
+manual backend/admin included in M.I.L. and the backend/admin created with
 EasyAdmin.
 
 Requirements
