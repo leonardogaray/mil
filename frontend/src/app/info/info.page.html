@@ -7,52 +7,41 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  
+  <div class="container">
 
-
-
-<div class="container">
-
-  <div class="titulo">
-    <h1>Información</h1>
-  </div>
-
-
-  <div class="container2">
-
-    <div id="tutorial" class="card">
-      <h3>Aprendé a usar la App</h3>
-      <p>Tutorial básico sobre el funcionamiento de M.I.L. Local Fire Monitoring</p>
-      <a routerLink="tutorial" class="btn btn-secondary">Tutorial</a>
-
+    <div class="titulo">
+      <h1>Información</h1>
     </div>
 
-    <div id="guia" class="card">
-      <h3>Entendé el fenómeno del incendio</h3>
-      <p>Guía sobre el desarrollo típico y la prevención de incendios en el Delta del Paraná</p>
-      <a routerLink="guia-incendios" class="btn btn-secondary">Guía</a>
 
+    <div class="container2">
+
+      <div id="tutorial" class="card">
+        <h3>Aprendé a usar la App</h3>
+        <p>Tutorial básico sobre el funcionamiento de M.I.L. Local Fire Monitoring</p>
+        <a routerLink="tutorial" class="btn btn-secondary">Tutorial</a>
+
+      </div>
+
+      <div id="guia" class="card">
+        <h3>Entendé el fenómeno del incendio</h3>
+        <p>Guía sobre el desarrollo típico y la prevención de incendios en el Delta del Paraná</p>
+        <a routerLink="guia-incendios" class="btn btn-secondary">Guía</a>
+
+      </div>
+
+      <div id="telefonos" class="card">
+        <h3>¿Sabés a quién llamar en caso de incendio?</h3>
+        <p>Índice de teléfonos a contactar frente a una situación de incendio según tu ubicación</p>
+        <a routerLink="telefonos" class="btn btn-secondary">Teléfonos</a>
+      </div>
+      
+      <div id="nosotros" class="card">
+        <h3>Quiénes están detrás de esta aplicación</h3>
+        <p>Somos un grupo de estudiantes -y dos no estudiantes- con ganas de ayudar y con (mucho) tiempo </p>
+        <a routerLink="nosotros" class="btn btn-secondary">Nosotros</a>
+      </div>
     </div>
-
-    <div id="telefonos" class="card">
-      <h3>¿Sabés a quién llamar en caso de incendio?</h3>
-      <p>Índice de teléfonos a contactar frente a una situación de incendio según tu ubicación</p>
-      <a routerLink="telefonos" class="btn btn-secondary">Teléfonos</a>
-
-    </div>
-
-    <div id="nosotros" class="card">
-      <h3>Quiénes están detrás de esta aplicación</h3>
-      <p>Somos un grupo de estudiantes -y dos no estudiantes- con ganas de ayudar y con (mucho) tiempo </p>
-      <a routerLink="nosotros" class="btn btn-secondary">Nosotros</a>
-
-    </div>
-
-    
-
-  </div>
-
-  
 </div>
 
 <router-outlet></router-outlet>
