@@ -146,7 +146,7 @@ class BlogController extends AbstractController
     /**
      * Deletes a Post entity.
      */
-    #[Route('/{id}/delete', methods: ['POST'], name: 'admin_post_delete')]
+    #[Route('/{id}/delete', methods: ['POST','GET'], name: 'admin_post_delete')]
     #[IsGranted('delete', subject: 'post')]
     public function delete(Request $request, Post $post, EntityManagerInterface $entityManager): Response
     {

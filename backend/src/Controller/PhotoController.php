@@ -27,7 +27,7 @@ class PhotoController extends AbstractController
         $post = new Post();
         $post->setAuthor($user);
         $post->setTitle("Reporte de Incendio!");
-        $post->setSlug("");
+        $post->setSlug(rand(1, 10000000));
         $post->setSummary("");
         $post->setContent($data["comments"]);
         $post->setPublishedAt(new DateTime());

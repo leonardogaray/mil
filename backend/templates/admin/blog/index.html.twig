@@ -30,6 +30,10 @@
                         <a href="{{ path('admin_post_edit', {id: post.id}) }}" class="btn btn-sm btn-primary">
                             <i class="fa fa-edit" aria-hidden="true"></i> {{ 'action.edit'|trans }}
                         </a>
+
+                        <a href="{{ path('admin_post_delete', {id: post.id}) }}" class="btn btn-sm btn-danger">
+                            <i class="fa fa-trash" aria-hidden="true"></i> {{ 'action.delete_post'|trans }}
+                        </a>
                     </div>
                 </td>
             </tr>
@@ -43,13 +47,5 @@
 {% endblock %}
 
 {% block sidebar %}
-    <div class="section actions">
-        <a href="{{ path('admin_post_new') }}" class="btn btn-lg btn-block btn-success">
-            <i class="fa fa-plus" aria-hidden="true"></i> {{ 'action.create_post'|trans }}
-        </a>
-    </div>
-
     {{ parent() }}
-
-    {{ show_source_code(_self) }}
 {% endblock %}
