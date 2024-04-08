@@ -107,6 +107,11 @@ class Post
     #[Assert\Count(max: 4, maxMessage: 'post.too_many_tags')]
     private Collection $tags;
 
+    /**
+     * @ORM\Column(type="string")
+     */
+    private ?string $imageUrlBase64 = null;
+
     public function __toString(): string
     {
         return $this->getTitle() ?? 'n/a';
@@ -219,5 +224,25 @@ class Post
     public function getTags(): Collection
     {
         return $this->tags;
+    }
+
+    /**
+     * Get the value of imageUrlBase64
+     */ 
+    public function getImageUrlBase64()
+    {
+        return $this->imageUrlBase64;
+    }
+
+    /**
+     * Set the value of imageUrlBase64
+     *
+     * @return  self
+     */ 
+    public function setImageUrlBase64($imageUrlBase64)
+    {
+        $this->imageUrlBase64 = $imageUrlBase64;
+
+        return $this;
     }
 }

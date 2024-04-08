@@ -30,16 +30,11 @@ export class CameraComponent  implements OnInit {
   }
 
   nextScreen(value: string) {
-    //this.onNextScreen.emit(value)
     this.trigger.next();
   }
 
-  takeSnapshot(): void {
-    //this.trigger.next();
-    this.nextScreen("1");
-    setTimeout(() => {
-      //this.nextScreen();
-    }, 5000);
+  sendPhoto(): void {
+    this.onNextScreen.emit(this.webcamImage.imageAsDataUrl)
   }
 
   onOffWebCame() {

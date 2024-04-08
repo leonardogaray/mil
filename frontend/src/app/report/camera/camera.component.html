@@ -10,11 +10,18 @@
   </ion-row>
 </ion-grid>
 
-
-<div *ngIf="webcamImage">
-  <h2>Nice one!</h2>
-  <img [src]="webcamImage.imageAsDataUrl" alt="webcam image">
-</div>
+<ion-grid *ngIf="webcamImage">
+  <ion-row class="ion-justify-content-center">
+    <ion-col size="4">
+      <img [src]="webcamImage.imageAsDataUrl" alt="webcam image">
+    </ion-col>
+  </ion-row>
+  <ion-row class="ion-justify-content-center">
+    <ion-col size="4">
+      <button class="sendButton" (click)="sendPhoto()">Send</button>
+    </ion-col>
+  </ion-row>
+</ion-grid>
 
 
 <div *ngIf="errors.length > 0">

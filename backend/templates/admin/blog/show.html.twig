@@ -12,6 +12,8 @@
 
     <div class="well">
         <p class="m-b-0"><strong>{{ 'label.summary'|trans }}</strong>: {{ post.summary }}</p>
+
+        <img src="{{ post.imageUrlBase64 }}" width="500" height="600">
     </div>
 
     {{ post.content|markdown_to_html|sanitize_html }}
