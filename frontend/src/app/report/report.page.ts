@@ -51,7 +51,7 @@ export class ReportPage {
     this.comments = comments;
 
     const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
-    const url = 'http://localhost/en/api/photo';
+    const url = '/en/api/photo';
     
     this.http.post(url, {
       location: this.location,

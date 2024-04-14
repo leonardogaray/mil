@@ -33,7 +33,7 @@ use Symfony\Component\Routing\Annotation\Route;
  * @author Ryan Weaver <weaverryan@gmail.com>
  * @author Javier Eguiluz <javier.eguiluz@gmail.com>
  */
-#[Route('/blog')]
+#[Route('/reporte')]
 class BlogController extends AbstractController
 {
     /**

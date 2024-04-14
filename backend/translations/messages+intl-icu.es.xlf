@@ -235,9 +235,9 @@
                 <source>menu.post_list</source>
                 <target>Listado de posts</target>
             </trans-unit>
-            <trans-unit id="menu.back_to_blog">
-                <source>menu.back_to_blog</source>
-                <target>Volver al blog</target>
+            <trans-unit id="menu.back">
+                <source>menu.back</source>
+                <target>Volver</target>
             </trans-unit>
             <trans-unit id="menu.homepage">
                 <source>menu.homepage</source>
