@@ -1,25 +1,25 @@
 <div class="camera">
-  <webcam  [allowCameraSwitch]="false" [height]="560" [width]="1000" [trigger]="triggerObservable" (imageCapture)="handleImage($event)"
+  <webcam  [allowCameraSwitch]="false" [height]="307" [width]="410" [trigger]="triggerObservable" (imageCapture)="handleImage($event)"
       *ngIf="showWebcam" [switchCamera]="nextWebcamObservable"></webcam>
 </div>
 <ion-grid *ngIf="showWebcam">
   <ion-row class="ion-justify-content-center">
-    <ion-col size="4">
-      <button class="test" (click)="nextScreen('photoTaken')"> Take</button>
-    </ion-col>
+ 
+      <button class="test" (click)="nextScreen('photoTaken')"> Tomar Foto</button>
+
   </ion-row>
 </ion-grid>
 
 <ion-grid *ngIf="webcamImage">
   <ion-row class="ion-justify-content-center">
-    <ion-col size="4">
+    <ion-col size="12">
       <img [src]="webcamImage.imageAsDataUrl" alt="webcam image">
     </ion-col>
   </ion-row>
   <ion-row class="ion-justify-content-center">
-    <ion-col size="4">
-      <button class="test" (click)="sendPhoto()">Send</button>
-    </ion-col>
+
+      <button class="test" (click)="sendPhoto()">Enviar</button>
+
   </ion-row>
 </ion-grid>
 
